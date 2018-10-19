@@ -1,0 +1,16 @@
+{
+  "name": "MWS JOGJA",
+  "short_name": "MWS",
+  "icons": [
+      {
+        "src": "images/logo.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+  ],
+  "start_url": "https://riskimidiw-ad041.firebaseapp.com/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#1F2338",
+  "theme_color": "#1F2338"
+}

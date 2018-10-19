@@ -1,0 +1,136 @@
+body {
+    background: #1F2338;
+    padding: 0; margin: 0;
+    color: #8A919F;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    padding: 0 10%;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 70px 70px 70px 50px;
+    grid-gap: 20px;
+}
+.menu {
+    grid-column: 1/5;
+}
+.sidebar {
+    border: solid 0;
+    border-radius: 5px;
+    padding: 20px;
+    background: #32394D;
+    grid-row: 2/5;
+    grid-column-end: 1/2;
+    background: #32394D;
+}
+.konten {
+    border: solid 0;
+    border-radius: 5px;
+    grid-column: 2/5;
+    background: #32394D;
+    padding: 20px;
+}
+.footer {
+    background: #32394D;
+    text-align: center;
+    padding: 10px;
+    font-size: 130%;
+    grid-column: 1/5;
+    grid-row : 5/6;
+    font-weight: bold;
+    border: solid 0px;
+    border-radius: 5px;
+}
+
+img {
+    position: relative;
+    top: -30px;
+    border-radius: 5px;
+    min-width: 150px;
+    min-height: 240px;
+    width: 100%;
+    height: 100%;
+}
+
+.c-green {
+    height: 100%;
+    color: #00A263;
+}
+
+.mapcontainer {
+    width: 100%;   
+}
+
+#mapid { 
+    height: 100vh;
+}
+
+.btn {
+    text-align: center;
+    position: relative;
+    top: -30px;
+    color: rgb(230, 230, 230);
+    padding: 20px 0;
+    font-size: 120%;
+    border: solid 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+.btn-green {
+    background: linear-gradient(to right, rgba(0, 162, 100, 0.932), rgba(11, 219, 139, 0.788));
+}
+
+.btn-orange {
+    background: linear-gradient(to right, rgba(253, 101, 13, 0.904), rgba(255, 136, 0, 0.822));
+}
+
+.btn-red {
+    background: linear-gradient(to right, rgba(233, 0, 12, 0.918), rgba(245, 12, 39, 0.959));
+}
+
+@media screen and (max-width: 564px) {
+    * {
+        font-size: 105%;
+    }
+    .container {
+        padding: 0 5%;
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 300px 80px 80px 80px 80px;
+        grid-gap: 30px;
+    }
+    .menu {
+        grid-column: unset;
+        grid-row: unset;
+        
+    }
+    .sidebar {
+        grid-column: unset;
+        grid-row: unset;
+    }
+    .konten {
+        grid-column: unset;
+        grid-row: unset;   
+    }
+    .footer {
+        background: none;
+        grid-column: unset;
+        grid-row: unset;
+        font-size: 100%;
+    }
+    img{
+        min-width: 150px;
+        min-height: 280px;
+    }
+}

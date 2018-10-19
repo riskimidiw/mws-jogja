@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='manifest' href='manifest.json'>
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name="Description" content="Latihan Mobile Web Specialist (MWS)">
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='application-name' content='MWS JOGJA'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='#1F2338'>
+    <meta name='apple-mobile-web-app-title' content='MWS JOGJA'>
+    <link rel='icon' sizes='192x192' href='./images/logo.png'>
+    <link rel='apple-touch-icon' href='./404.html'>
+    <meta name="theme-color" content="#1F2338">
+    <link rel="stylesheet" href="style.css">
+    <title>Riski Midi Wardana</title>
+</head>
+<body>
+    <div></div>
+    <div class="container">
+        <div class="menu"><ion-icon class="c-green" size="large" name="analytics"></ion-icon></div>
+        <div class="sidebar"><img src="./images/img.jpg" alt=""></div>
+        <div class="konten">
+            <a href="./project1/">
+                <div class="btn btn-green">
+                    Add 2 Number
+                </div>
+            </a>
+        </div>
+        <div class="konten">
+            <a href="./project2/">
+             <div class="btn btn-orange">
+                Lokasi Istimewa
+             </div>             
+            </a>
+        </div>
+        <div class="konten">
+            <a href="#">
+                <div class="btn btn-red">
+                    Konten 3
+                </div>                        
+            </a>
+        </div>
+        <div class="footer">RISKI MIDI WARDANA</div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('sw.js')
+            .then(reg => console.log('Service Worker registered at ', reg.scope))
+            .catch(error => console.log('Registration failed:', error))
+        }
+        else {
+          console.log('Service-Worker not supported in this Browser');
+        }
+      </script>
+</body>
+</html>
