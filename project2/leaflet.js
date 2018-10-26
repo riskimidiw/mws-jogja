@@ -9,6 +9,13 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 var marker = L.marker([-7.782887, 110.367071]).addTo(mymap);
 marker.bindPopup("<b>Tugu Jogja</b><br>Bangunan terkenal di jogja").openPopup();
+marker.on("click", ()=>{
+    var gambar = document.querySelector(".gambar");
+    gambar.style.backgroundImage = "url('img/tugu.jpg')";
+    var review = document.querySelector(".review");
+    var rating = "<h1>Rating<br>5</h1>";
+    review.innerHTML = rating;
+});
 
 var circle = L.circle([-7.782332, 110.365670], {
     color: 'red',
@@ -17,6 +24,13 @@ var circle = L.circle([-7.782332, 110.365670], {
     radius: 100
 }).addTo(mymap);
 circle.bindPopup("Pasar Kranggan");
+circle.on("click", ()=>{
+    var gambar = document.querySelector(".gambar");
+    gambar.style.backgroundImage = "url('img/kranggan.jpg')";
+    var review = document.querySelector(".review");
+    var rating = "<h1>Rating<br>4.5</h1>";
+    review.innerHTML = rating;
+});
 
 var polygon = L.polygon([
     [-7.779582, 110.367900],
